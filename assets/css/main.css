@@ -2271,3 +2271,25 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+ .video-container {
+  width: 100%;       /* กว้างเต็มพื้นที่ container */
+  max-width: 900px;  /* กำหนดกว้างสูงสุดที่ต้องการ */
+  height: 400px;     /* กำหนดความสูงแนวนอน (สูงน้อยกว่าแบบ 16:9 เล็กน้อย) */
+  margin: 0 auto 2rem; /* จัดกึ่งกลางและเว้นช่องล่าง */
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
